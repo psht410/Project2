@@ -1,2 +1,2 @@
-# Project2
-File comparison code
+# Software Engineering Project 2
+File comparison program
