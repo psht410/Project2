@@ -3,6 +3,8 @@
 #include <sys/stat.h>
 #include <unistd.h>
 #include <time.h>
+#include <errno.h>
+#include <stdlib.h>
 
 struct stat stat1, stat2;
 struct tm *time1, *time2;
@@ -80,7 +82,7 @@ void sizecmp(){
     if (st_size1 == st_size2) {
         printf("sizes are equal\n");
     }
-    else if (size_stat1 > size_stat2) {
+    else if (st_size1 > st_size2) {
         printf("text1 is bigger\n");
     }
     else {
