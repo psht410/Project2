@@ -63,7 +63,6 @@ void filetime1(){
 
 	localtime_r(&stat1.st_mtime, time1);
 }
-
 //파일 2의 시간 정보를 가져오는 함수 작성
 void filetime2(){
 
